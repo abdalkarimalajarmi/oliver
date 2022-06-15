@@ -1,0 +1,827 @@
+@font-face {
+  font-family: bold;
+  src: url(../fonts/Prompt-Bold.ttf);
+}
+@font-face {
+  font-family: regular;
+  src: url(../fonts/Prompt-Regular.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --maincolor1: #2a9466;
+}
+/*First page header Style*/
+.first-page {
+  background-color: rgba(42, 148, 102, 0.15);
+  padding: 1.7em 5% 10em 5%;
+}
+.first-page .header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2em;
+}
+.first-page .header i {
+  display: none;
+  color: black;
+}
+.first-page .header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.first-page .header .nav-bar {
+  position: relative;
+  top: 0.75rem;
+  right: 1rem;
+}
+.first-page .header .nav-bar i {
+  color: var(--maincolor1);
+}
+.first-page .header-nav ul {
+  display: flex;
+}
+.first-page .header-nav ul li {
+  list-style: none;
+  padding-right: 3em;
+  padding-bottom: 1em;
+  font-size: 1.1rem;
+}
+.first-page .header-nav ul li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-family: bold;
+}
+.first-page .header-nav ul li a:hover {
+  color: var(--maincolor1);
+  cursor: pointer;
+}
+/*First page body Style*/
+.first-page .body {
+  display: flex;
+  justify-content: space-between;
+}
+.first-page .body .left-of-page {
+  width: 43%;
+}
+.first-page .body .left-of-page .getStarted-btn {
+  padding-top: 4em;
+}
+.first-page .body .left-of-page .getStarted-btn .btn {
+  padding: 0.3em 1em;
+  color: white;
+  background-color: var(--maincolor1);
+  border: none;
+  font-family: regular;
+  border-radius: 4px;
+}
+.first-page .body .left-of-page .getStarted-btn .btn:hover {
+  color: var(--maincolor1);
+  background-color: white;
+  cursor: pointer;
+}
+.first-page .body .left-of-page .details .head {
+  font-size: 3rem;
+  font-family: bold;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  text-transform: capitalize;
+}
+.first-page .body .left-of-page .details .detail {
+  font-size: 1em;
+  font-family: regular;
+  color: grey;
+}
+.first-page .body .left-of-page .logo {
+  padding-top: 2.5em;
+}
+.first-page .body .left-of-page .logo i {
+  color: white;
+  background-color: var(--maincolor1);
+  border-radius: 50%;
+  padding: 1em;
+  margin-bottom: 25px;
+}
+/* Formm Style*/
+.right-of-page .getStarted-Form {
+  background-color: white;
+  width: 100%;
+  padding: 2em 2em;
+  border-radius: 3px;
+}
+.right-of-page .getStarted-Form .form-head {
+  text-align: center;
+  font-family: bold;
+  padding: 1em;
+}
+.right-of-page .getStarted-Form label {
+  font-family: regular;
+  padding-bottom: 1em;
+}
+.right-of-page .getStarted-Form input {
+  display: block;
+  width: 100%;
+  padding-top: 0.9em;
+  padding-bottom: 0.9em;
+  padding-left: 0.4em;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.right-of-page .getStarted-Form .free-trial {
+  background-color: var(--maincolor1);
+  color: white;
+}
+.right-of-page .getStarted-Form .free-trial:hover {
+  color: var(--maincolor1);
+  background-color: white;
+  cursor: pointer;
+}
+/*Second page style*/
+/*Companies logos style*/
+.second-page .companies {
+  display: flex;
+  padding: 5em 5% 5em 5%;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.4);
+  border-bottom: 1px solid lightgray;
+}
+/*Head of second page style*/
+.second-page .header {
+  text-align: center;
+  padding: 5em;
+}
+.second-page .header .head-of-header {
+  padding-bottom: 1em;
+  text-transform: capitalize;
+  font-family: bold;
+  font-size: 2em;
+}
+.second-page .header .details {
+  font-family: regular;
+  font-size: 1em;
+  color: gray;
+}
+/*First explore*/
+.second-page .first-explore {
+  display: flex;
+  padding: 5em 5% 5em 5%;
+}
+.second-page .first-explore .side {
+  padding-top: 10em;
+  padding-right: 3em;
+}
+.second-page .first-explore .side .title {
+  font-family: regular;
+  font-size: 0.8em;
+  letter-spacing: 5px;
+}
+.second-page .first-explore .side .head {
+  font-size: 2em;
+  font-family: bold;
+  text-transform: capitalize;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.second-page .first-explore .side .head {
+  font-size: 2em;
+  font-family: bold;
+  text-transform: capitalize;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.second-page .first-explore .side .info {
+  font-size: 1em;
+  font-family: regular;
+  padding-bottom: 2.5em;
+  color: gray;
+}
+.second-page .first-explore .side .first-exp-btn {
+  color: white;
+  background-color: var(--maincolor1);
+  padding: 1em 2em;
+  border-radius: 25px;
+  border: none;
+  font-family: bold;
+}
+.second-page .first-explore .side .first-exp-btn:hover {
+  color: var(--maincolor1);
+  background-color: white;
+  cursor: pointer;
+}
+/*Second explore*/
+.second-page .second-explore {
+  display: flex;
+  padding: 5em 5% 10em 5%;
+}
+.second-page .second-explore .side {
+  padding-top: 10em;
+  padding-left: 3em;
+}
+.second-page .second-explore .side .title {
+  font-family: regular;
+  font-size: 0.8em;
+  letter-spacing: 5px;
+}
+.second-page .second-explore .side .head {
+  font-size: 2em;
+  font-family: bold;
+  text-transform: capitalize;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.second-page .second-explore .side .head {
+  font-size: 2em;
+  font-family: bold;
+  text-transform: capitalize;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.second-page .second-explore .side .info {
+  font-size: 1em;
+  font-family: regular;
+  padding-bottom: 2.5em;
+  color: gray;
+}
+.second-page .second-explore .side .second-exp-btn {
+  color: white;
+  background-color: var(--maincolor1);
+  padding: 1em 2em;
+  border-radius: 25px;
+  border: none;
+  font-family: bold;
+}
+.second-page .second-explore .side .second-exp-btn:hover {
+  color: var(--maincolor1);
+  background-color: white;
+  cursor: pointer;
+}
+/*Features style*/
+.features .features-header {
+  text-align: center;
+  background-color: var(--maincolor1);
+  border-top-left-radius: 70%;
+  border-top-right-radius: 70%;
+  padding-top: 5em;
+  padding-bottom: 10em;
+}
+.features .features-header .head {
+  text-transform: capitalize;
+  font-size: 2em;
+  font-family: bold;
+  color: white;
+  line-height: 2;
+}
+.features .features-header .details {
+  font-size: 0.8em;
+  font-family: regular;
+  color: white;
+}
+.features-box .feature-container {
+  display: flex;
+  justify-content: center;
+}
+.features-box .feature-container .feature {
+  padding: 1em;
+}
+.features-box .feature-container .feature .body-of-feature {
+  width: 100%;
+  padding: 3em;
+  border: 1px solid lightgray;
+  display: flex;
+  border-radius: 5px;
+  background-color: white;
+  position: relative;
+  top: -110px;
+}
+.features-box .feature-container .feature .body-of-feature .logo {
+  padding-right: 1em;
+}
+.features-box .feature-container .feature .body-of-feature .logo img {
+  width: 2rem;
+  height: 2rem;
+}
+.features-box .feature-container .feature .body-of-feature .description .title {
+  font-size: 1.5em;
+  font-family: bold;
+  text-transform: capitalize;
+  color: black;
+  padding-bottom: 0.5rem;
+}
+.features-box .feature-container .feature .body-of-feature .description .des {
+  font-size: 1em;
+  font-family: regular;
+  color: gray;
+}
+
+/*-------------------------------------------Farah El-Qarra--------------------------------*/
+/*-------------------------------------------Farah El-Qarra--------------------------------*/
+/*-------------------------------------------Farah El-Qarra--------------------------------*/
+/*-------------------------------------------Farah El-Qarra--------------------------------*/
+/*-------------------------------------------Farah El-Qarra--------------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: fonts;
+  src: url("../fonts/Prompt-Bold.ttf");
+}
+@font-face {
+  font-family: font;
+  src: url("../fonts/Prompt-Regular.ttf");
+}
+.container {
+  width: 100%;
+
+  padding: 1.875em;
+}
+:root {
+  --basicBackground: #2a9466;
+  --maincolor: #fff;
+  --mainbackground: #46c08b;
+  --mainborder: rgb(185, 178, 178);
+  --font-color: rgb(153, 151, 151);
+}
+.hosts {
+  text-align: center;
+  font-family: font;
+  font-size: 2.7rem;
+}
+.using {
+  display: block;
+}
+
+.cost {
+  padding-bottom: 0.625em;
+  padding-top: 0.625em;
+  text-align: center;
+  font-family: fonts;
+}
+.stars {
+  background-color: var(--basicBackground);
+  padding: 0.625em;
+
+  border-radius: 3.125em;
+}
+.dow {
+  background-color: var(--basicBackground);
+  padding: 0.625em;
+
+  border-radius: 3.125em;
+}
+.boxes {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.875em;
+}
+.average {
+  text-align: center;
+  font-family: font;
+}
+.box1 {
+  border: 1px solid var(--mainborder);
+  padding-left: 3.125em;
+  padding-right: 3.125em;
+  padding-top: 1.25em;
+  padding-bottom: 1.25em;
+}
+
+.star {
+  padding-left: 1.875em;
+}
+.main-content {
+  padding-top: 3.125em;
+
+  width: 72%;
+  margin: auto;
+}
+
+.ready {
+  padding-top: 1.25em;
+  font-family: font;
+  width: 92%;
+
+  padding-bottom: 0.875em;
+  color: var(--maincolor);
+  font-size: 2rem;
+}
+.basic {
+  background-color: var(--mainbackground);
+  padding-top: 1.875em;
+  padding-bottom: 4em;
+  margin-left: 28px;
+
+  text-align: center;
+
+  border-radius: 0.625em;
+}
+.point {
+  padding-bottom: 1.875em;
+  color: rgb(231, 231, 231);
+  font-family: font;
+}
+.get-start {
+  padding-top: 3.75em;
+}
+.dolor {
+  font-family: font;
+
+  padding-left: 55px;
+  text-align: center;
+  font-size: 23px;
+  padding-right: 34px;
+
+  color: var(--font-color);
+}
+.easy {
+  padding-bottom: 15px;
+  font-family: font;
+  font-size: 2.375em;
+}
+.text {
+  text-align: center;
+}
+.free {
+  padding: 0.625em 1.25em;
+  text-align: center;
+  background-color: var(--maincolor);
+  border-radius: 0.375em;
+  border: none;
+
+  font-family: fonts;
+  word-spacing: 0.188em;
+}
+.main-boxes {
+  padding-left: 1.875em;
+}
+/*step*/
+.btn {
+  padding: 0.563em 0.563em;
+  border: none;
+  border-radius: 0.313em;
+  background-color: var(--mainbackground);
+  color: var(--maincolor);
+  text-align: center;
+  font-family: font;
+}
+.steps {
+  display: flex;
+  justify-content: center;
+}
+
+.design {
+  padding-top: 0.625em;
+  padding-bottom: 0.625em;
+  font-family: fonts;
+  font-size: 1.875rem;
+}
+.explain {
+  font-family: font;
+  color: var(--font-color);
+}
+.step1 {
+  text-align: center;
+}
+.step2 {
+  text-align: center;
+}
+.step3 {
+  text-align: center;
+}
+.step {
+  padding-left: 1.875em;
+  padding-top: 2.5em;
+}
+/*user*/
+.evalute {
+  color: var(--basicBackground);
+  word-spacing: 8px;
+}
+
+.mean {
+  padding-top: 1.875em;
+  background-color: #d5eee3;
+  padding-bottom: 80px;
+  border-top-right-radius: 20%;
+  border-top-left-radius: 20%;
+}
+.main-text {
+  padding-right: 20%;
+  padding-left: 20%;
+}
+.user {
+  padding-top: 3.75em;
+}
+.oliver {
+  font-family: fonts;
+  text-align: center;
+  font-size: 3.188rem;
+}
+.dolor {
+  font-family: font;
+}
+.dolors {
+  text-align: center;
+  font-family: font;
+  padding-top: 0.938em;
+  font-size: 1.3rem;
+  color: var(--font-color);
+}
+.users2 {
+  background-color: var(--maincolor);
+  padding: 1.875em;
+  border-radius: 1.25em;
+}
+.user2 {
+  padding-left: 1.875em;
+  padding-top: 1.875em;
+  width: 25%;
+}
+
+.users {
+  display: flex;
+  justify-content: center;
+}
+.angle {
+  transform: translate(-209px, -155px);
+}
+
+
+
+.angles {
+  
+  transform: translate(210px, -160px);
+
+}
+.thomas-carey {
+  padding-bottom: 0.625em;
+  font-family: font;
+}
+.main-user {
+  display: flex;
+}
+.thomas {
+  padding-left: 4.063em;
+  padding-top: 0.938em;
+}
+
+.carey {
+  width: 10%;
+}
+.img1 {
+  width: 5em;
+  border-radius: 4.313em;
+}
+.nulla {
+  padding-top: 1.25em;
+  font-family: font;
+  color: var(--font-color);
+}
+/*sdfghj*/
+.dolor {
+  font-family: font;
+  padding-left: 55px;
+  text-align: center;
+  font-size: 23px;
+  padding-right: 34px;
+}
+.oliver {
+  font-size: 2em;
+}
+
+.lorem {
+  text-align: center;
+  padding-left: 32px;
+  font-size: 1.3rem;
+  padding-right: 25px;
+  font-family: font;
+  padding-top: 1.25em;
+  padding-bottom: 1.875em;
+  color: var(--font-color);
+}
+/*-------------------------------------------Hayah Ayyash--------------------------------*/
+/*-------------------------------------------Hayah Ayyash--------------------------------*/
+/*-------------------------------------------Hayah Ayyash--------------------------------*/
+/*-------------------------------------------Hayah Ayyash--------------------------------*/
+/*-------------------------------------------Hayah Ayyash--------------------------------*/
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: KumbhSans-Bold;
+  src: url(../font/Prompt-BoldItalic.ttf);
+}
+@font-face {
+  font-family: KumbhSans-Regular;
+  src: url(../font/Prompt-Medium.ttf);
+}
+.container {
+  text-align: center;
+  padding: 3.125rem;
+}
+.div {
+  text-align: center;
+  margin-top: 6.25rem;
+}
+.par {
+  opacity: 0.5;
+  font-size: small;
+  margin-top: 0.938rem;
+}
+.shap {
+  padding: 3.75rem;
+  display: flex;
+  justify-content: center;
+}
+.par-1 {
+  opacity: 0.5;
+  font-size: large;
+  margin-top: 0.938rem;
+}
+.Choose {
+  margin-top: 1.875rem;
+  padding: 0.5rem;
+  border-radius: 0.313rem;
+  background-color: rgb(6, 161, 123);
+  border: #fff;
+  color: #fff;
+  text-align: center;
+}
+
+.nomber {
+  margin-top: 1.25rem;
+}
+.shape-1 {
+  margin-right: 1.25rem;
+  border: #d9dfdf 1px solid;
+  padding: 1.25rem;
+}
+.shape-2 {
+  margin-right: 1.25rem;
+  border: #d9dfdf 1px solid;
+  padding: 1.25rem;
+}
+.shape-3 {
+  margin-right: 1.25rem;
+  border: #d9dfdf 1px solid;
+  padding: 1.25rem;
+}
+.chart {
+  background-color: rgb(6, 161, 123);
+  border-top-right-radius: 100%;
+  border-top-left-radius: 100%;
+}
+.form {
+  padding: 1rem 05rem;
+  line-height: 2em;
+  border: #b3baba 1px solid;
+  position: absolute;
+  top: 376em;
+  background-color: #fff;
+  border-radius: 1em;
+  left: 15em;
+  right: 15em;
+  font-size: 1.188;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.child-1 {
+  padding-right: 15.625em;
+  font-size: medium;
+}
+.subject {
+  width: 850;
+  padding-right: 31.25em;
+  padding-bottom: 0.9375em;
+}
+.subject-1 {
+  width: 850;
+  padding-right: 31.25em;
+  padding-bottom: 3.125em;
+}
+.sub {
+  padding-right: 21.875em;
+  font-size: medium;
+}
+
+.name {
+  display: flex;
+  padding-right: 150px;
+  padding-bottom: 0.9375em;
+}
+.contact {
+  text-align: center;
+  color: #fff;
+  /* margin-top: 200px; */
+  padding: 8em;
+}
+.submit {
+  padding: 0.9375em;
+  border-radius: 0.3125em;
+  background-color: rgb(6, 161, 123);
+  border: #fff;
+  color: white;
+  padding-left: 0.9375em;
+  margin-left: 39.375em;
+  padding-top: 0.625em;
+  padding-bottom: 0.625em;
+  margin-top: 0.4375em;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  padding: 18em;
+}
+.table {
+  /* margin-left:  21.875em; */
+  padding-left: 500px;
+}
+.label {
+  display: flex;
+}
+/* .table-1{
+  margin-right: 1.25em;
+  justify-content: space-around;
+} */
+.icons {
+  display: flex;
+  padding: 10px;
+}
+.fac {
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  color: #fff;
+  background-color: rgb(6, 161, 123);
+  padding-top: 5px;
+}
+.twitter {
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  color: #fff;
+  background-color: rgb(6, 161, 123);
+  padding-top: 5px;
+}
+.link {
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  color: #fff;
+  background-color: rgb(6, 161, 123);
+  padding-top: 5px;
+}
+.plus {
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  color: #fff;
+  background-color: rgb(6, 161, 123);
+  padding-top: 5px;
+}
+.follow {
+  padding-top: 15px;
+}
+.em {
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: rgb(6, 161, 123);
+  padding-top: 10px;
+  margin-left: 70em;
+}
+.envelope {
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: rgb(6, 161, 123);
+  padding-top: 5px;
+  margin-left: 40px;
+}
